@@ -1,0 +1,314 @@
+body{
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    animation-duration: 2s;
+    animation-name: appear-down;
+    animation-iteration-count: 1;
+    position: fixed;
+}
+a{
+  text-decoration: none;
+  color: aqua;
+  
+}
+a:hover{
+    text-shadow: orange 2px 2px 2px;
+    
+
+}
+li{
+    list-style-type:none;
+    display: inline;
+    padding: 25px;
+    
+}
+ul{
+    padding-left: 200px;
+}
+
+@keyframes appear-down {
+   0%{opacity: 0;
+transform: translateY(-100%);}
+   100%{opacity: 1;}    
+}
+.logo{
+    background: linear-gradient(90deg, rgba(255,226,0,1) 50%, rgba(217,9,9,1) 56%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+button{
+    border-radius: 20px;
+    padding: 7px;
+    color:white;
+    background-color:red ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation-name: popup;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-left: 500px;
+}
+@keyframes popup {
+    0%{transform: scale(1);}
+    50%{transform:scale(1.5);}
+    100%{transform: scale(1);}
+}
+button:hover{
+    background-color: rgb(158, 14, 14);
+    transition: 0.5s ;
+    
+    
+}
+
+.myself{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 150px;
+}
+.content{
+    align-items: center;
+    color: cyan;
+    font-size: 40px;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-name: appear-left;
+    white-space:nowrap ;
+    padding-top:-80px ;
+    padding-bottom: -80px;
+}
+@keyframes appear-right{
+    0%{opacity: 0;
+    transform: translateX(50%);}
+    100%{opacity: 1;}
+    
+}
+@keyframes appear-left{
+    0%{opacity: 0;
+    transform: translateX(-50%);}
+    100%{opacity: 1;}
+    
+}
+.man img{
+    width: 600px;
+    animation-name: appear-right;
+    animation-duration: 2s;
+    animation-iteration-count: 1;    
+}
+.discription{
+        font-size:20px ;
+}
+#aboutus{
+    display:flex;
+    padding-top:200px;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+.info p{
+    color: aquamarine;
+    font-size: 20px;
+    animation-name:appear-up ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes appear-up{
+    0%{opacity: 0;
+    transform: translateY(50%);}
+    100%{opacity: 1;}
+}
+
+
+.info h1{
+    color: orangered;
+    padding-top: 120px;
+    font-size: 40px;
+    padding-left: 100px;
+    animation-name:appear-down ;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    text-decoration:underline ;
+}
+.pic img
+{
+    width: 300px;
+    background: rgb(0,255,222);
+    background: radial-gradient(circle, rgba(0,255,222,1) 13%, rgba(9,0,0,1) 57%);
+    animation-name: raise;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    position:sticky;
+}
+@keyframes raise{
+    0%{transform: scale(0.3);}
+    100%{transform: scale(1);}
+}
+.info{
+    justify-content:flex-start;
+}
+#services div{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 200px;
+}
+#services{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+section h2{
+    color: chocolate;
+    align-items: center;
+}
+i{
+    color: aliceblue;
+    border: solid 2px;
+    padding: 10px;
+    border-radius: 30px;
+}
+section p{
+    color: greenyellow;
+}
+#services h1{
+    color:orangered ;
+    text-decoration: underline;
+    font-size: 40px;
+    animation-name:appear-down;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+section:nth-child(3){
+    animation-name:appear-slowly;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+}
+section:nth-child(2){
+    animation-name:appear-slowly;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+section:nth-child(1){
+    animation-name:appear-slowly;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes appear-slowly{
+    0%{opacity: 0;}
+    70%{opacity: 0;}
+    100%{opacity: 1;}
+}
+#skills h1{
+    color: orangered;
+    text-decoration: underline;
+    animation: appear-up 3s;
+    text-align: center;
+    font-size: 40px;
+}
+#skills{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 100px;
+
+}
+#html-box{
+    border: orange solid 5px;
+    margin-right: 500px;
+    animation:filler1  3s ;
+    animation-delay: 0.7s;
+
+}
+#css-box{
+    border:blue solid 5px;
+    margin-right: 300px;
+    animation:filler2  6s ;
+    
+}
+#js-box{
+    border:yellow solid 5px;
+    margin-right: 800px;
+    animation:filler3  9s ;
+    
+    
+}
+.skill{
+    animation: appear-right 6s;
+    animation:appear-slowly 3s;
+}
+@keyframes filler1 {
+    0%{
+    opacity:0;}
+    50%{opacity: 1;
+    margin-right:2000px;}  
+    100%{margin-right:500px;}  
+}
+@keyframes filler2 {
+    0%{
+    opacity:0;}
+    50%{opacity: 1;
+    margin-right:2000px;}  
+    100%{margin-right:300px;}  
+}
+@keyframes filler3 {
+    0%{
+    opacity:0;}
+    50%{opacity: 1;
+    margin-right:2000px;}  
+    100%{margin-right:800px;}  
+}
+#contact h1{
+    margin-top: 200px;
+    color: orangered;
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    animation: appear-down 3s;
+}
+#contact p{
+    color:aquamarine;
+    font-size: 20px;
+    padding: 20px;
+ 
+    text-align: center;
+    animation: appear-down 3s;
+}
+#contact div{
+    display: flexbox;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+.social i{
+    justify-content: space-between;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 100px;
+    margin-left: 200px;
+    border: none;
+    cursor: pointer;
+    
+}
+.social i:nth-child(1){
+    animation: appear-slowly 3s ;
+}
+.social i:nth-child(2){
+    animation: appear-slowly 6s ;
+}
+.social i:nth-child(3){
+    animation: appear-slowly 9s ;
+}
+.social i:nth-child(4){
+    animation: appear-slowly 12s ;
+}
